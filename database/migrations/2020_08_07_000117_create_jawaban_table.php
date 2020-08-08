@@ -16,10 +16,9 @@ class CreateJawabanTable extends Migration
         Schema::create('jawaban', function (Blueprint $table) {
             $table->increments('id');
             $table->string('isi', 255)->nullable();
-            $table->date('tanggal_dibuat')->nullable()->default(new DateTime());
-            $table->date('tanggal_diperbaharui')->nullable();
-            $table->integer('pertanyaan_id');
-            $table->integer('profil_id');
+            $table->integer('pertanyaan_id')->unsigned();
+            $table->integer('profil_id')->unsigned();
+            $table->timestamps();
 
             $table->foreign('pertanyaan_id')->references('id')->on('pertanyaan')->onDelete('cascade');
             $table->foreign('profil_id')->references('id')->on('profil')->onDelete('cascade');

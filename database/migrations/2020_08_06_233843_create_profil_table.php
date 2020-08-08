@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProfilesTable extends Migration
+class CreateProfilTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,9 +15,9 @@ class CreateProfilesTable extends Migration
     {
         Schema::create('profil', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama_lengkap', 100);
-            $table->string('email', 45);
-            $table->string('foto', 45);
+            $table->string('nama_lengkap', 100)->nullable();
+            $table->string('email', 45)->nullable();
+            $table->string('foto', 45)->nullable();
         });
     }
 

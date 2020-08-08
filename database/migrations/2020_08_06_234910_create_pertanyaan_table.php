@@ -17,12 +17,9 @@ class CreatePertanyaanTable extends Migration
             $table->increments('id');
             $table->string('judul', 45);
             $table->string('isi', 255);
-            $table->date('tanggal_dibuat')->nullable()->default(new DateTime());
-            $table->date('tanggal_diperbaharui')->nullable();
-            $table->integer('jawaban_tepat_id')->unsigned();
             $table->integer('profil_id')->unsigned();
+            $table->timestamps();
 
-            $table->foreign('jawaban_tepat_id')->references('id')->on('jawaban')->onDelete('cascade');
             $table->foreign('profil_id')->references('id')->on('profil')->onDelete('cascade');
         });
     }

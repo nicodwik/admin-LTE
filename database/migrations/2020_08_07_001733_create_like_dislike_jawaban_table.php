@@ -15,8 +15,8 @@ class CreateLikeDislikeJawabanTable extends Migration
     {
         Schema::create('like_dislike_jawaban', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('jawaban_id');
-            $table->integer('profil_id');
+            $table->integer('jawaban_id')->unsigned();
+            $table->integer('profil_id')->unsigned();
 
             $table->foreign('jawaban_id')->references('id')->on('jawaban')->onDelete('cascade');
             $table->foreign('profil_id')->references('id')->on('profil')->onDelete('cascade');

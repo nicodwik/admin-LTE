@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/data-table', function () {
     return view('data-table');
 });
+
+Route::resource('pertanyaan', 'PertanyaanController');
+Route::get('pertanyaan/{id}', 'PertanyaanController@show');
