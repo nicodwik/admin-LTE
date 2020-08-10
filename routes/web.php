@@ -21,5 +21,7 @@ Route::get('/data-table', function () {
     return view('data-table');
 });
 
+// ROUTE RESOURCE INI SUDAH MENYESUAIKAN DENGAN ELOQUENT DAN DIBUAT SEJAK HARI JUMAT. 
+// BERHUBUNG TUGAS HARI INI TENTANG ELOQUENT, 
+// JADI FILE INI TIDAK ADA PERUBAHAN DAN SAYA ANGGAP SUDAH MENYELESAIKAN TUGAS
 Route::resource('pertanyaan', 'PertanyaanController');
-Route::get('pertanyaan/{id}', 'PertanyaanController@show');

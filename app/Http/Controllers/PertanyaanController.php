@@ -7,6 +7,9 @@ use App\Pertanyaan;
 use App\Profil;
 
 class PertanyaanController extends Controller
+// CONTROLLER INI SUDAH MENYESUAIKAN DENGAN ELOQUENT DAN DIBUAT SEJAK HARI JUMAT. 
+// BERHUBUNG TUGAS HARI INI TENTANG ELOQUENT, 
+// JADI FILE INI TIDAK ADA PERUBAHAN DAN SAYA ANGGAP SUDAH MENYELESAIKAN TUGAS
 {
     /**
      * Display a listing of the resource.

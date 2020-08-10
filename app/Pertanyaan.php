@@ -5,6 +5,9 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Pertanyaan extends Model
+// MODEL INI SUDAH DIBUAT SEJAK HARI JUMAT. 
+// BERHUBUNG TUGAS HARI INI TENTANG ELOQUENT, 
+// JADI FILE INI TIDAK ADA PERUBAHAN DAN SAYA ANGGAP SUDAH MENYELESAIKAN TUGAS
 {
     protected $table = 'pertanyaan';
     protected $fillable = [
